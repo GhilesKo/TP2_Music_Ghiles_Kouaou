@@ -1,0 +1,71 @@
+.navbar {
+  background-color: rgb(225, 212, 186);
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0 auto;
+}
+
+.contenu {
+  width: 70%;
+  background-color: rgb(250, 248, 224);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  margin: 0 20px;
+  outline: 1px solid black;
+}
+.boiteInputButon {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.boutton {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.boiteResultat {
+  border: 1px solid rgb(21, 20, 20);
+  margin: 20px;
+  padding: 0 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boiteResultat h2 {
+
+  margin-bottom: 20px;
+}
+.boiteResultat h4 {
+  margin-top: 10px;
+}
+
+.rowAlbum {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.rowAlbum img {
+  height: auto;
+
+  border-radius: 5%;
+  width: 100%;
+
+}
+.rowAlbum h4 {
+  cursor: pointer;
+}
