@@ -1,0 +1,16 @@
+.boiteResultat {
+  border: 1px solid rgb(21, 20, 20);
+  margin: 20px;
+  padding: 0 20px;
+  background-color: rgb(250, 248, 224);
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  justify-content: center;
+}
+
+.boiteResultat h5 {
+  width: 300px;
+}

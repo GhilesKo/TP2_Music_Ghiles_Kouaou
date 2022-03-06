@@ -1,0 +1,34 @@
+.boiteResultat {
+  border: 1px solid rgb(21, 20, 20);
+  margin: 20px;
+  padding: 0 20px;
+  background-color: rgb(250, 248, 224);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.artistsBox {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+  text-align: center;
+}
+.artistsBox h5 {
+  text-align: center;
+}
+
+.artistsBox img {
+  height: 250px;
+  width: 250px;
+  margin: 10px 40px 10px 30px;
+  border-radius: 50%;
+}

@@ -1,6 +1,9 @@
+<!-- NAVBAR -->
 <div class="contenu">
   <div class="navbar">
-    <h2>Super Musique Infinie</h2>
+    <a href="">
+      <h2>Super Musique Infinie</h2>
+    </a>
   </div>
   <div class="form-group box">
     <div class="boiteInputButon">
@@ -12,7 +15,7 @@
         placeholder="Artist name"
       />
       <button
-        (click)=" getArtist(); toggleClick()"
+        (click)="getArtist()"
         type="button"
         class="btn btn-primary boutton"
       >
@@ -20,17 +23,7 @@
       </button>
     </div>
   </div>
-
-  <div class="boiteResultat">
-    <h2 *ngIf="pressed === true">Album de : {{ titreh2 }}</h2>
-
-    <div class="rowAlbum row" *ngFor="let album of listArtist">
-      <div class="col-3">
-        <img src="{{ album.image }}" alt="" />
-      </div>
-      <div class="col-9">
-
-      </div>
-    </div>
-  </div>
 </div>
+
+<!-- MAIN CONTENT DEPENDING ON CURRENT ROUTE -->
+<router-outlet></router-outlet>

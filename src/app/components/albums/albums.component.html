@@ -1,0 +1,11 @@
+<div class="boiteResultat container">
+  <div class="" *ngFor="let album of listAlbum">
+    <div class="itemBox">
+      <h5 class="">{{ album.titre }}</h5>
+      <a [routerLink]="['/chansons', album.id]">
+        <img class="albumImg" src="{{ album.image }}" alt=""
+      /></a>
+    </div>
+    <div class="col-9"></div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="boiteResultat container">
+  <div class="artistsBox" *ngFor="let artist of artistService.listArtist">
+    <h5>{{ artist.name }}</h5>
+
+    <a [routerLink]="['/albums', artist.id]">
+      <img class="" src="{{ artist.image }}" alt="" />
+    </a>
+  </div>
+</div>

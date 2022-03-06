@@ -1,0 +1,28 @@
+.boiteResultat {
+  border: 1px solid rgb(21, 20, 20);
+  margin: 20px;
+  padding: 0 20px;
+  background-color: rgb(250, 248, 224);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.itemBox {
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+
+  text-align: center;
+}
+
+.itemBox img {
+  height: 90%;
+  width: 90%;
+  border-radius: 7%;
+}
