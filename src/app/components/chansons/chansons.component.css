@@ -11,6 +11,6 @@
   justify-content: center;
 }
 
-.boiteResultat h5 {
-  width: 300px;
+.boiteResultat h2 {
+  cursor: pointer;
 }

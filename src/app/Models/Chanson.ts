@@ -1,3 +1,7 @@
 export class Chanson {
-  constructor(public name?: string, public id?: string) {}
+  constructor(
+    public name: string,
+    public clicked?: boolean,
+    public id?: string
+  ) {}
 }
