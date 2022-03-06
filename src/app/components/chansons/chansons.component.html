@@ -1,12 +1,15 @@
 <div class="container boiteResultat">
-  <div class="" *ngFor="let chanson of listSongs">
-    <div>
-      <h2 (click)="getVideoId(chanson.name); isClicked(chanson)">
-        {{ chanson.name }}
-      </h2>
-      <iframe *ngIf="chanson.clicked === true" [src]="{lienYT}"></iframe>
+  <div class="row">
+    <div class="col-7">
+      <div *ngFor="let chanson of listSongs">
+        <h2 (click)="getVideoId(chanson.name); isClicked(chanson)">
+          {{ chanson.name }}
+        </h2>
+      </div>
     </div>
-
-    <div class="col-9"></div>
+    <div class="col-5 video">
+      <h4>Play a music</h4>
+      <iframe [src]="lienYT | safe" width="500" height="300"></iframe>
+    </div>
   </div>
 </div>

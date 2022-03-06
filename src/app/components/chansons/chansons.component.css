@@ -14,3 +14,9 @@
 .boiteResultat h2 {
   cursor: pointer;
 }
+
+.video {
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 2px solid rgb(21, 20, 20);
+}

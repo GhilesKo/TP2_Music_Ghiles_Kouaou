@@ -8,6 +8,7 @@ import { ArtistsComponent } from './components/artists/artists.component';
 import { AlbumsComponent } from './components/albums/albums.component';
 import { ChansonsComponent } from './components/chansons/chansons.component';
 import { Chanson } from './Models/Chanson';
+import { SafePipe } from './Models/SafePipe';
 
 const routes: Routes = [
   { path: 'artists', component: ArtistsComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     ArtistsComponent,
     AlbumsComponent,
     ChansonsComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
