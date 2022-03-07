@@ -24,7 +24,7 @@ export class AlbumsComponent implements OnInit {
 
   async getAlbums() {
     var artistId = this.route.snapshot.paramMap.get('artistId');
-    console.log(artistId);
+    //console.log(artistId);
 
     if (artistId != null) {
       await lastValueFrom(this.spotify.getAlbums(artistId))

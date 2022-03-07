@@ -6,6 +6,7 @@ import { Album } from './Models/Album';
 import { Artist } from './Models/Artist';
 import { lastValueFrom } from 'rxjs';
 import { ArtistesService } from './Services/Artistes/artistes.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,15 @@ import { ArtistesService } from './Services/Artistes/artistes.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  language: string = 'fr';
   constructor(
     public spotify: DataService,
-    public artistService: ArtistesService
-  ) {}
+    public artistService: ArtistesService,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang(this.language);
+    translate.use(this.language);
+  }
 
   artistName?: string;
 
@@ -34,5 +40,14 @@ export class AppComponent implements OnInit {
       .catch((err) => {
         console.log(err);
       });
+  }
+
+  changeLanguage() {
+    if (this.language === 'fr') {
+      this.language = 'en';
+    } else {
+      this.language = 'fr';
+    }
+    this.translate.use(this.language);
   }
 }

@@ -5,5 +5,11 @@
     <a [routerLink]="['/albums', artist.id]">
       <img class="" src="{{ artist.image }}" alt="" />
     </a>
+    <button
+      [routerLink]="['/concert', artist.name]"
+      class="btn btn-primary buttonConcert"
+    >
+      {{ "AfficherConcert" | translate }}
+    </button>
   </div>
 </div>

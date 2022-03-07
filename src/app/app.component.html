@@ -2,24 +2,30 @@
 <div class="contenu">
   <div class="navbar">
     <a href="">
-      <h2>Super Musique Infinie</h2>
+      <h2>{{ "title" | translate }}</h2>
     </a>
+    <div class="boxLangue">
+      <button class="btn btn-primary btn-sm" (click)="changeLanguage()">
+        {{ "changeLanguage" | translate }}
+      </button>
+      <h5>{{ language }}</h5>
+    </div>
   </div>
   <div class="form-group box">
     <div class="boiteInputButon">
-      <h5>Look up an artist</h5>
+      <h5>{{ "lookupArtist" | translate }}</h5>
       <input
         [(ngModel)]="artistName"
         type="email"
         class="form-control"
-        placeholder="Artist name"
+        placeholder="{{ 'ArtistName' | translate }}"
       />
       <button
         (click)="getArtist()"
         type="button"
         class="btn btn-primary boutton"
       >
-        Search
+        {{ "ButtonSearch" | translate }}
       </button>
     </div>
   </div>

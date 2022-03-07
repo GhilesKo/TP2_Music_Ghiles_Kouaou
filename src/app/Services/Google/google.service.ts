@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 
-const apiKey = 'AIzaSyCSBPwatZGvi2rXmPi1q-EFXmGazgZZ95w';
+const apiKey = 'AIzaSyDLIsFTOC-XkIZMSN_rQZscuL1YB28vFuc';
 @Injectable({
   providedIn: 'root',
 })
